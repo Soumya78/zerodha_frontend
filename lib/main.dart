@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:viewtrading/data/config/routing/app_router.dart';
 
 Future<void> mainCommon(String env) async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,12 +13,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'ViewTrading ( env)',
-      home: Scaffold(
-        appBar: AppBar(title: Text('ViewTrading [ env]')),
-        body: Center(child: Text('Hello from  env!')),
-      ),
+    return MaterialApp.router(
+      routerConfig: router,
     );
   }
 }

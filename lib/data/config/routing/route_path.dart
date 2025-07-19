@@ -1,3 +1,3 @@
 class RoutePath {
-  static const String splashScreen = '/splash-screen';
+  static const String splashScreenPath = '/splash-screen';
 }

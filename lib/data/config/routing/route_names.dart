@@ -1,4 +1,3 @@
 class RouteNames {
-  static const String splashScreen = '/splash-screen';
-  
+  static const String splashScreenName = '/splash-screen';
 }

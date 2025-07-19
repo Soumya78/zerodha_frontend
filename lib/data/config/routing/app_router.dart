@@ -4,10 +4,10 @@ import 'package:viewtrading/data/config/routing/route_path.dart';
 import 'package:viewtrading/presentation/pages/splashscreen.dart';
 
 final GoRouter router = GoRouter(
-  initialLocation: RouteNames.splashScreen,
+  initialLocation: RouteNames.splashScreenName,
   routes: [
     GoRoute(
-      path: RoutePath.splashScreen,
+      path: RoutePath.splashScreenPath,
       builder: (context, state) => const Splashscreen(),
     ),
   ],

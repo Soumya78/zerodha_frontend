@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class Router {
-  Router._privateConstructor();
+class RouterHelper
+  {
+  RouterHelper._privateConstructor();
 
-  static final Router instance = Router._privateConstructor();
+  static final RouterHelper instance = RouterHelper._privateConstructor();
 
   void go(
     BuildContext context,
@@ -29,14 +30,14 @@ class Router {
   void pushNamed(
     BuildContext context,
     String name, {
-    Map<String, String>? params,
-    Map<String, String>? queryParams,
+    required Map<String, String> params,
+    required Map<String, String> queryParams,
     Object? extra,
   }) {
     context.pushNamed(
       name,
-      params: params,
-      queryParams: queryParams,
+      pathParameters: params,
+      queryParameters: queryParams,
       extra: extra,
     );
   }
